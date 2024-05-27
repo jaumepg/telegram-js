@@ -6,7 +6,7 @@ class GeocodingService {
             const response = await axios.get('https://maps.googleapis.com/maps/api/geocode/json', {
                 params: {
                     address: address,
-                    key: "AIzaSyAjqtye4NkSp_kap1qUMZBDOL9nj3Ln_Ho"
+                    key: ""
                 }
             });
 
@@ -24,7 +24,7 @@ class GeocodingService {
         const response = await client.geocode({
             params: {
                 address: address,
-                key: 'AIzaSyAjqtye4NkSp_kap1qUMZBDOL9nj3Ln_Ho',  // Reemplaza con tu API key de Google Maps
+                key: '',  // Reemplaza con tu API key de Google Maps
             },
             timeout: 1000,  // Tiempo de espera para la solicitud
         })
